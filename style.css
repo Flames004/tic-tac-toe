@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #f53333e5;
+    color: white;
+    height: 3.5em;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    cursor: pointer;
+}
+h1{
+    /* background: #f1dada; */
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 20px;
+}
+.gameContainer {
+    /* background: rgb(170, 248, 170); */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    /* border: 1px dashed green; */
+    margin-right: 50px;
+}
+.line{
+    position: absolute;
+    height: 2px;
+    border-radius: 50px;
+    background: red;
+}
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box:hover{
+    background-color: #def4f8;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.gameInfo{
+    margin-left: 20px;
+    display: flex;
+    /* border: 1px dashed green; */
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#info{
+    font-size: x-large;
+    display: block;
+    margin-top: 10px;
+    width: 15vw;
+    font-size: 2.5vw;
+}
+#reset{
+    background-color: black;
+    color: wheat;
+    border: none;
+    width: 10vw;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 800px)
+{
+    h1{
+        font-size: 5vw;
+    }
+    .gameContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        grid-template-columns: repeat(3, 16vw);
+        grid-template-rows: repeat(3, 16vw);
+        margin: 0;
+    }
+    .gameInfo{
+        margin: 20px 0 0 0;
+        width: 150px;
+        align-items: center;
+    }
+    #info{
+        width: 20vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+    #reset{
+        width: 15vw;
+        padding: 13px;
+        font-size: 3vw;
+    }
+}
