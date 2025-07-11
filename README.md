@@ -40,5 +40,3 @@ This Tic Tac Toe game is created by `Deepak Shukla`. It is developed as a fun pr
 The project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as per the terms of the license.
 
 Enjoy playing Tic Tac Toe!
-
----
